@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.vexta.view.AbrirCaixaController">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="Abertura do Caixa em 3 de janeiro" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="254.0" text="CONFIRME O SALDO NO CAIXA DE HOJE" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="SaldoAnteriorLabel" layoutX="151.0" layoutY="132.0" text="R$549,00" textFill="WHITE">
+         <font>
+            <Font size="62.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="121.0" text="SALDO DO CAIXA DE ONTEM" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SaldoHojeTextField" layoutX="91.0" layoutY="275.0" prefHeight="73.0" prefWidth="337.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font></TextField>
+      <Button alignment="BOTTOM_LEFT" layoutX="628.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleAbrirCaixa" prefHeight="135.0" prefWidth="150.0" style="-fx-background-color: #41A85F;" text="Abrir o Caixa" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

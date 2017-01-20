@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.vexta.view.PrincipalCaixaAbertoController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../resources/wallpaper/w.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="298.0" layoutY="14.0" prefHeight="93.0" prefWidth="459.0" text="Star Luck Store" textFill="#0d0d0d">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="horas" ellipsisString="" layoutX="42.0" layoutY="87.0" text="15:34" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="431.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleAbrirCaixa" onKeyPressed="#keyPressedF2AbrirCaixa" prefHeight="215.0" prefWidth="206.0" style="-fx-background-color: #41A75F;" text="Abrir o caixa" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="644.0" layoutY="300.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="126.0" style="-fx-background-color: #29324E;" text="Entrada de Mercadorias" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="14.0" layoutY="555.0" mnemonicParsing="false" style="-fx-background-color: #29324E;" text="Menu Fiscal" textFill="WHITE" />
+      <Button layoutX="100.0" layoutY="555.0" mnemonicParsing="false" style="-fx-background-color: #29324E;" text="Telas" textFill="WHITE" />
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="644.0" layoutY="414.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="126.0" style="-fx-background-color: #29324E;" text="Qual é o preço?" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="24.0" layoutY="25.0" text="Nova Venda" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="45.0" prefHeight="23.0" prefWidth="56.0" text="Varejo" textFill="#cd723e" />
+      <Label layoutX="24.0" layoutY="87.0" prefHeight="23.0" prefWidth="277.0" text="Cliente" textFill="WHITE" />
+      <TextField layoutX="24.0" layoutY="153.0" prefHeight="50.0" prefWidth="604.0" text="Bipe aqui os itens vendidos">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="136.0" text="CÓDIGO DE BARRAS DO PRODUTO VENDIDO" textFill="WHITE" />
+      <Label layoutX="643.0" layoutY="10.0" text="R$0,00" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button alignment="BOTTOM_CENTER" layoutX="643.0" layoutY="300.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="143.0" style="-fx-background-color: #28324E;" text="Troca" textFill="WHITE" />
+      <Button alignment="BOTTOM_CENTER" layoutX="643.0" layoutY="463.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="143.0" style="-fx-background-color: #41A75F;" text="Pagar" textFill="WHITE" />
+      <ListView layoutX="24.0" layoutY="223.0" prefHeight="362.0" prefWidth="610.0" />
+      <Button alignment="BOTTOM_CENTER" layoutX="643.0" layoutY="149.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="143.0" style="-fx-background-color: #28324E;" text="Cancelar Itens" textFill="WHITE" />
+   </children>
+</AnchorPane>
