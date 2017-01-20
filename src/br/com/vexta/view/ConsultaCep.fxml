@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.vexta.view.ConsultaCepController">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="Consulta CEP" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="72.0" text="Digite o CEP desejado(sem pontos)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCep" layoutX="45.0" layoutY="103.0" prefHeight="73.0" prefWidth="337.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font></TextField>
+      <Button alignment="TOP_CENTER" layoutX="45.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleConsultarCep" prefHeight="43.0" prefWidth="337.0" style="-fx-background-color: #41A85F;" text="Buscar Informações" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="55.0" layoutY="287.0" text="Dados" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="345.0" text="CEP:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="366.0" text="Logradouro:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="387.0" text="Complemento:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="408.0" text="Bairro:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="429.0" text="Localidade:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="450.0" text="UF:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="471.0" text="Unidade:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="492.0" text="IBGE:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="513.0" text="Gia:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cep" layoutX="89.0" layoutY="345.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="logradouro" layoutX="142.0" layoutY="366.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="complemento" layoutX="162.0" layoutY="387.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bairro" layoutX="104.0" layoutY="408.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="localidade" layoutX="136.0" layoutY="429.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="uf" layoutX="80.0" layoutY="450.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="unidade" layoutX="120.0" layoutY="471.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ibge" layoutX="97.0" layoutY="492.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="gia" layoutX="89.0" layoutY="513.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

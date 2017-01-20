@@ -1,12 +1,9 @@
 package br.com.vexta.util;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 
 import javax.swing.JLabel;
-import javax.swing.Timer;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;

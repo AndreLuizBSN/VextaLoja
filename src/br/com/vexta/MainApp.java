@@ -138,7 +138,7 @@ public class MainApp extends Application {
 
             // Fornece o controller novo para o main app
             PrincipalCaixaFechadoController controller = loader.getController();
-            //controller.setMainApp(this);
+            controller.setMainApp(this);
 
         } catch (IOException e) {
             e.printStackTrace();
