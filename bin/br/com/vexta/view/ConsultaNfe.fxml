@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.vexta.view.ConsultaNFeController">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="Consulta NF-e" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="72.0" text="CNPJ do Certificado" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfXmlUrl" layoutX="45.0" layoutY="103.0" prefHeight="73.0" prefWidth="337.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font></TextField>
+      <Button alignment="TOP_CENTER" layoutX="45.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleConsultarNfe" prefHeight="43.0" prefWidth="337.0" style="-fx-background-color: #41A85F;" text="Buscar Informações" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="242.0" text="Dados" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="chaveNfe" layoutX="105.0" layoutY="294.0" prefHeight="21.0" prefWidth="377.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="certificado" layoutX="513.0" layoutY="93.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="492.0" layoutY="176.0" prefHeight="3.0" prefWidth="272.0" />
+      <Label layoutX="492.0" layoutY="186.0" text="Status Serviço" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="versao" layoutX="557.0" layoutY="216.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="214.0" text="Versão:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="233.0" text="Ambiente:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="ambiente" layoutX="570.0" layoutY="235.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="252.0" text="Versao app:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="273.0" text="Status cód.:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="294.0" text="Status nome:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="315.0" text="Cód. UF:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="338.0" text="Dt/hr consulta:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="versaoAplicacao" layoutX="582.0" layoutY="254.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="codigoStatus" layoutX="582.0" layoutY="275.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="motivo" layoutX="591.0" layoutY="296.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="codigoUf" layoutX="557.0" layoutY="317.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dtHrRecibo" layoutX="597.0" layoutY="340.0" style="-fx-font-weight: bold;" text="Sem informação" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="294.0" text="Chave:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="315.0" text="Protocolo:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="336.0" text="Dig. Val.:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="401.0" text="Vers. App:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="378.0" text="Ambiente:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="357.0" text="Versão NF-e:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="485.0" text="Dt/hr recibo:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="464.0" text="Cód. UF:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="443.0" text="Status Nome:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="422.0" text="Status Cód.:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="protocoloNfe" layoutX="124.0" layoutY="315.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="digValNfe" layoutX="112.0" layoutY="336.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="versaoNfe" layoutX="134.0" layoutY="357.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ambNfe" layoutX="124.0" layoutY="378.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="verAppNfe" layoutX="124.0" layoutY="401.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="codStatusNfe" layoutX="134.0" layoutY="422.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="motivoNfe" layoutX="143.0" layoutY="443.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="codUfNfe" layoutX="112.0" layoutY="464.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dtHrReciboNfe" layoutX="143.0" layoutY="485.0" prefHeight="21.0" prefWidth="233.0" style="-fx-font-weight: bold;" text="Sem dados" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

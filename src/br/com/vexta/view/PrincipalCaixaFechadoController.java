@@ -92,6 +92,25 @@ public class PrincipalCaixaFechadoController {
 	}
 	
 	@FXML
+	private void handleConsultaNfe() {
+
+	    okClicked = true;
+	    try {
+	    	FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(MainApp.class.getResource("view/ConsultaNfe.fxml"));
+	        AnchorPane personOverview = (AnchorPane) loader.load();
+	        mainApp.setRootLayoutCenter(personOverview);
+
+            // Fornece o controller novo para o main app
+	        ConsultaNFeController controller = loader.getController();
+            controller.setMainApp(this.mainApp);
+
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+	@FXML
 	private void keyPressedF2AbrirCaixa() {
 		
 		if(KeyCode.F2.isDigitKey()) {

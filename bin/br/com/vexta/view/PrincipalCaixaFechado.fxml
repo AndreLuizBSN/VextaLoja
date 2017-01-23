@@ -70,5 +70,6 @@
          </font>
       </Label>
       <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleConsultaCep" prefHeight="57.0" prefWidth="68.0" style="-fx-background-color: #29324E;" text="CEP" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleConsultaNfe" prefHeight="57.0" prefWidth="68.0" style="-fx-background-color: #29324E;" text="NFe" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
    </children>
 </AnchorPane>
