@@ -1,32 +1,15 @@
 package br.com.vexta.view;
 
-import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.Calendar;
-import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
-
-import br.com.edsonmoretti.acbr.monitorplus.comunicador.ACBrNFe;
-import br.com.edsonmoretti.acbr.monitorplus.comunicador.exceptions.ACBrNFeException;
+import br.com.vexta.acbr.monitorplus.comunicador.ACBrNFe;
+import br.com.vexta.acbr.monitorplus.comunicador.exceptions.ACBrNFeException;
 import br.com.vexta.MainApp;
-import br.com.vexta.model.Caixa;
-import br.com.vexta.util.ConsumerViaCep;
 import br.com.vexta.util.ConvertNfeToMap;
 import br.com.vexta.util.ConvertStatusNfeToMap;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ConsultaNFeController {
@@ -74,7 +57,6 @@ public class ConsultaNFeController {
     @FXML
     private TextField tfXmlUrl;
 
-    private Stage dialogStage;
     private MainApp mainApp;
     private ACBrNFe n;
 

@@ -63,6 +63,7 @@ public class MainApp extends Application {
 		Query query = em.createQuery("SELECT r FROM Caixa r WHERE r.fechado = 0", Caixa.class);
 
 		Date ultimaData = null;
+		@SuppressWarnings("unchecked")
 		List<Caixa> caixaList = query.getResultList();
 		for (Caixa p : caixaList) {
 			ultimaData = p.getDataInicial();

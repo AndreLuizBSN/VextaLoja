@@ -1,20 +1,12 @@
 package br.com.vexta.view;
 
-
-import java.text.DecimalFormat;
-import java.util.Calendar;
-
 import br.com.vexta.MainApp;
 import br.com.vexta.util.HorasExec;
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 
 public class PrincipalCaixaFechadoController {
 
