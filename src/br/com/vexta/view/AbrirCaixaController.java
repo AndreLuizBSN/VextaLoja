@@ -50,6 +50,7 @@ public class AbrirCaixaController {
 		Query query = em.createQuery("SELECT r FROM Caixa r WHERE r.fechado = 1", Caixa.class);
 
 		BigDecimal valorFinal = null;
+		@SuppressWarnings("unchecked")
 		List<Caixa> caixaList = query.getResultList();
 		for (Caixa p : caixaList) {
 			valorFinal = p.getValorFinal();

@@ -13,7 +13,8 @@ public class Banco {
 
     private String numero;
     private CNAB cnab;
-    private INDICEACBR indiceacbr;
+    @SuppressWarnings("deprecation")
+	private INDICEACBR indiceacbr;
 
     public String getNumero() {
         return numero;
@@ -31,11 +32,12 @@ public class Banco {
         this.cnab = cnab;
     }
 
-    public INDICEACBR getIndiceacbr() {
+    @SuppressWarnings("deprecation")
+	public INDICEACBR getIndiceacbr() {
         return indiceacbr;
     }
 
-    public void setIndiceacbr(INDICEACBR indiceacbr) {
+    public void setIndiceacbr(@SuppressWarnings("deprecation") INDICEACBR indiceacbr) {
         this.indiceacbr = indiceacbr;
     }
 

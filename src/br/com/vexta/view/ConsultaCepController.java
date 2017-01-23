@@ -36,8 +36,6 @@ public class ConsultaCepController {
     private TextField tfCep;
 
     private Stage dialogStage;
-    private MainApp mainApp;
-
     /*
      * Contrutor*/
     public ConsultaCepController(){
@@ -57,7 +55,6 @@ public class ConsultaCepController {
      * @param mainApp
      */
     public void setMainApp(MainApp mainApp) {
-        this.mainApp = mainApp;
     }
 
     /**

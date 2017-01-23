@@ -10,6 +10,7 @@ package br.com.vexta.acbr.monitorplus.comunicador.ecf.paf.blocox.reducaoz;
  * @author Edson
  */
 public class TotalizadoresParciais extends java.util.ArrayList<TotalizadorParcial> {
+	private static final long serialVersionUID = 1L;
 
     @Override
     public String toString() {

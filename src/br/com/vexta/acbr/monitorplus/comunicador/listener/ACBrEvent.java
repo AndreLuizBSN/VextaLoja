@@ -11,7 +11,12 @@ package br.com.vexta.acbr.monitorplus.comunicador.listener;
  */
 public class ACBrEvent extends java.util.EventObject {
 
-    public ACBrEvent(Object source) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ACBrEvent(Object source) {
         super(source);
     }
 

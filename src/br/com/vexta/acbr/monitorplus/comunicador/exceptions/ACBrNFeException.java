@@ -12,6 +12,11 @@ package br.com.vexta.acbr.monitorplus.comunicador.exceptions;
 public class ACBrNFeException extends Exception {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Creates a new instance of <code>ACBrNFeException</code> without detail
      * message.
      */

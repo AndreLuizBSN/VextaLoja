@@ -10,6 +10,7 @@ package br.com.vexta.acbr.monitorplus.comunicador.exceptions;
  * @author Edson Moretti - www.vexta.com.br
  */
 public class ACBrECFException extends Exception {
+	private static final long serialVersionUID = 1L;
     //TODO: Quando sobrar tempo catalogar os ERROS
 //    public enum CodigoERRO {
 //

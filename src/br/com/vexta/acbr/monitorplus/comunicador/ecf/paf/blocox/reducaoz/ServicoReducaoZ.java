@@ -5,8 +5,6 @@
  */
 package br.com.vexta.acbr.monitorplus.comunicador.ecf.paf.blocox.reducaoz;
 
-import br.com.vexta.acbr.monitorplus.comunicador.utils.Numeros;
-
 /**
  *
  * @author Edson

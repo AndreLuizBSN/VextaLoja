@@ -5,7 +5,6 @@
  */
 package br.com.vexta.acbr.monitorplus.comunicador.ecf.paf;
 
-import br.com.vexta.acbr.monitorplus.comunicador.ACBr;
 import br.com.vexta.acbr.monitorplus.comunicador.ACBrECF;
 import br.com.vexta.acbr.monitorplus.comunicador.ACBrUtils;
 import br.com.vexta.acbr.monitorplus.comunicador.exceptions.ACBrECFException;

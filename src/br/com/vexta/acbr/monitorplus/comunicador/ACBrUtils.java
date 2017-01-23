@@ -61,6 +61,8 @@ public class ACBrUtils {
      */
     private static SimpleDateFormat dateFormatHora;
 
+	private static PrintWriter pw;
+
     public static String MD5(char[] text) throws ACBrException {
         return MD5(String.valueOf(text));
     }
@@ -194,7 +196,7 @@ public class ACBrUtils {
         if (!file.exists()) {
             file.createNewFile();
         }
-        PrintWriter pw = new PrintWriter(file);
+        pw = new PrintWriter(file);
         pw.println(linha);
     }
 

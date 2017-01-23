@@ -10,7 +10,6 @@ import br.com.vexta.util.ConvertStatusNfeToMap;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 public class ConsultaNFeController {
 
@@ -57,7 +56,6 @@ public class ConsultaNFeController {
     @FXML
     private TextField tfXmlUrl;
 
-    private MainApp mainApp;
     private ACBrNFe n;
 
     /*
@@ -100,7 +98,6 @@ public class ConsultaNFeController {
      * @param mainApp
      */
     public void setMainApp(MainApp mainApp) {
-        this.mainApp = mainApp;
     }
 
     /**

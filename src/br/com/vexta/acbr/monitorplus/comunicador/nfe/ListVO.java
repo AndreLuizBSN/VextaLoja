@@ -15,7 +15,12 @@ import java.util.ArrayList;
  */
 public class ListVO<T> extends ArrayList<T> {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
     public boolean add(T e) {
         ((MembroList) e).setInd(TextUtils.lpadZero(3, this.size() + 1));
         return super.add(e);

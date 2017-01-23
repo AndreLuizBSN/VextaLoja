@@ -13,4 +13,9 @@ import java.util.ArrayList;
  */
 public class ECFs extends ArrayList<ECF> {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 }

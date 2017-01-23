@@ -10,6 +10,7 @@ package br.com.vexta.acbr.monitorplus.comunicador.ecf.paf.blocox.estoque;
  * @author Edson
  */
 public class Produtos extends java.util.ArrayList<ProdutoEstoque> {
+	private static final long serialVersionUID = 1L;
 
     @Override
     public String toString() {

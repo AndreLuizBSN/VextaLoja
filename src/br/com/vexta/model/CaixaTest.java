@@ -1,7 +1,6 @@
 package br.com.vexta.model;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -21,7 +20,8 @@ public class CaixaTest {
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
 		Query query = em.createQuery("SELECT c FROM Caixa c", Caixa.class);
-        List<Caixa> caixaList = query.getResultList();
+        @SuppressWarnings("unchecked")
+		List<Caixa> caixaList = query.getResultList();
         System.out.println("Caixa List:");
         for (Caixa p : caixaList) {
             System.out.println(p.toString());

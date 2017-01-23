@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Edson Moretti - www.vexta.com.br
+ * @author www.vexta.com.br
  */
 public class ACBr {
 
@@ -32,6 +32,7 @@ public class ACBr {
     private static final String NAMEHOST = getConfig().getNameHost();
     private static final int PORTA = getConfig().getPorta();
     private static InetAddress hostName;
+	private static ObjectInputStream ois;
 
     public ACBr() {
     }
@@ -367,7 +368,7 @@ public class ACBr {
         String c = "config.acbr";
         try {
             FileInputStream fis = new FileInputStream(c);
-            ObjectInputStream ois = new ObjectInputStream(fis);
+            ois = new ObjectInputStream(fis);
             return (Config) ois.readObject();
         } catch (Exception e) {
             Config config = new Config();
@@ -399,7 +400,11 @@ public class ACBr {
 
     private static class Config implements Serializable {
 
-        private String nameHost;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		private String nameHost;
         private int porta;
 
         public String getNameHost() {

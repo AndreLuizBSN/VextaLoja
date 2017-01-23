@@ -17,7 +17,7 @@ import java.util.Collection;
 
 /**
  *
- * @author Edson Moretti - www.vexta.com.br
+ * @author - www.vexta.com.br
  */
 public class ACBrECF {
 
